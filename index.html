@@ -163,7 +163,7 @@
 
   .hero-title {
     font-family: 'Libre Baskerville', serif;
-    font-size: clamp(36px, 5vw, 68px);
+    font-size: clamp(28px, 4vw, 52px);
     font-weight: 700;
     color: white;
     line-height: 1.1;
@@ -174,7 +174,7 @@
     font-family: 'Libre Baskerville', serif;
     font-size: clamp(28px, 4vw, 52px);
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
     color: var(--lavanda-light);
     margin-bottom: 28px;
     display: block;
@@ -203,7 +203,8 @@
     align-items: center;
     gap: 8px;
     padding: 14px 32px;
-    background: var(--lavanda);
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.4);
     color: white;
     text-decoration: none;
     font-size: 12px;
@@ -212,12 +213,13 @@
     text-transform: uppercase;
     border-radius: 2px;
     transition: all 0.3s;
+    backdrop-filter: blur(6px);
   }
 
   .btn-primary:hover {
-    background: var(--lavanda-dark);
+    background: rgba(255,255,255,0.22);
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(124,111,160,0.4);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
   }
 
   .btn-ghost {
@@ -482,7 +484,7 @@
   /* CONTACTO */
   .contacto-wrap {
     background: var(--lavanda-pale);
-    padding: 70px 24px;
+    padding: 50px 24px 30px;
   }
 
   .contacto {
